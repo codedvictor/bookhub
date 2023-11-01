@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchInput = document.getElementById("searchInput");
     const searchButton = document.getElementById("searchButton");
     const results = document.getElementById("results");
+    const token_reg = "AIzaSyBesqu6dqIGh136psIOEZNrdH2WmBJF8GU";
 
     searchButton.addEventListener("click", () => {
         const query = searchInput.value.trim();
@@ -13,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function searchBooks(query) {
         // Make an API request to the Google Books API using the 'fetch' function.
         // You'll need to replace 'YOUR_API_KEY' with your actual API key.
-        fetch(`https://www.googleapis.com/books/v1/volumes?q=${query}&key=AIzaSyBesqu6dqIGh136psIOEZNrdH2WmBJF8GU`)
+        fetch(`https://www.googleapis.com/books/v1/volumes?q=${query}&key=${token_reg}`)
             .then((response) => response.json())
             .then((data) => displayResults(data.items))
             .catch((error) => console.error(error));
