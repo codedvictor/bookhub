@@ -1,4 +1,4 @@
-# contributors: Ige Victor Kolade
+# contributor: Ige Victor Kolade
 
 ```
 # BookHub Listing Platform
