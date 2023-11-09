@@ -4,22 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookHub</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/searchstyles.css">
+    <link rel="icon" type="image/x-icon" href="/images/ficon-removebg-preview.png">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Add Bootstrap JavaScript and jQuery links (jQuery is required for some Bootstrap components) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </head>
 <body>
-    <header>
-        <h1>BookHub</h1>
+    <header class="bg-primary text-white text-center py-3">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Search Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <h1 class="display-4">BookHub</h1>
     </header>
 
-    <main>
-        <section class="search">
-            <input type="text" id="searchInput" placeholder="Search for books...">
-            <button id="searchButton">Search</button>
+    <main class="container my-4">
+        <section class="search d-flex justify-content-center">
+            <div class="input-group">
+                <input type="text" id="searchInput" class="form-control" placeholder="Search for books...">
+                <div class="input-group-append">
+                    <button id="searchButton" class="btn btn-primary">Search</button>
+                </div>
+            </div>
         </section>
         <section class="results" id="results">
             <!-- Book search results will be displayed here -->
         </section>
     </main>
+    <section id="about" class="about container my-5">
+        <h2 class="text-center mb-4">About This Project</h2>
+        <p>This project was born from a passion for books and the desire to create a platform that simplifies the process of discovering, exploring, and sharing great reads. As an avid reader, I often found myself searching for books by my favorite authors, reading reviews to make informed choices, and maintaining a personal reading list. This project was inspired by my journey as a book enthusiast and the challenges I encountered along the way.</p>
+        <p>It all began as a personal project, and I dedicated my free time to its development. Over the course of several months, I crafted the concept, conducted research, and brought this platform to life. The timeline was a labor of love, driven by the belief that every reader deserves a user-friendly tool to enhance their reading experience.</p>
+        <p>Feel free to connect with me on social media:</p>
+        <ul>
+        <a href="https://www.linkedin.com/in/ige-victor-dynamix/" class="btn btn-primary">LinkedIn</a>
+        <a href="https://github.com/codedvictor" class="btn btn-primary">GitHub</a>
+        <a href="https://twitter.com/dynamixvictor" class="btn btn-primary">Twitter</a>
+        </ul>
+        <p>If you're interested in contributing or exploring the code behind this project, you can find it on GitHub:</p>
+        <a href="https://github.com/codedvictor/bookhub" class="btn btn-primary">GitHub Repository</a>
+    </section>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 BookHub Listing Platform</p>
+    </footer>
 
     <script src="script/app.js"></script>
 </body>

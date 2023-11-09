@@ -3,34 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Book Listing Platform</title>
-    <link rel="stylesheet" href="styles/landingpage.css">
+    <title>BookHub Listing Platform</title>
+    <link rel="stylesheet" href="styles/homestyles.css">
+    <link rel="icon" type="image/x-icon" href="/images/ficon-removebg-preview.png">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </head>
 <body>
-    <header>
-        <h1>BookHub</h1>
-        <h1>Welcome to the Google Book Listing Platform</h1>
-        <p>Discover, Search, and Share Your Favorite Books</p>
+    <header class="bg-primary text-white text-center py-5">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="search.html">Search Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <h1 class="display-4">Welcome to the BookHub Listing Platform</h1>
+        <p class="lead">Discover, Search, and Share Your Favorite Books</p>
     </header>
 
-    <section class="cta">
-        <h2>Start Exploring Today</h2>
-        <p>Search for books, read reviews, and build your reading list.</p>
-        <a href="search.html" class="cta-button">Get Started</a>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <img src="images/large-banner.png" alt="Large Cover Image" class="img-fluid rounded">
+            <h1 class="display-4">Find Your Next Great Read</h1>
+            <p class="lead">Explore a vast collection of books and discover your next literary adventure.</p>
+            <a href="search.html" class="cta-button btn btn-primary">Get Started</a>
+        </div>
+    </div>
+
+    <section class="features container my-5">
+        <h2 class="text-center mb-4">Key Features</h2>
+        <div class="row ft1">
+            <div class="col-md-6 align-self-center">
+                <img src="images/author.jpg" alt="Book Image" class="img-fluid">
+            </div>
+            <div class="col-md-6 align-self-center">
+                <h2 class="mb-4">Search for Books by Author</h2>
+                <p class="mb-4">Search for books by your favorite authors and discover their works.</p>
+            </div>
+        </div>
+
+        <div class="row ft2">
+            <div class="col-md-6 align-self-center">
+                <h2 class="mb-4">View Book Details</h2>
+                <p class="mb-4">Access comprehensive information about each book, including descriptions and covers.</p>
+            </div>
+            <div class="col-md-6 align-self-center">
+                <img src="images/ebook-library.jpg" alt="Book Image" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="row ft3">
+            <div class="col-md-6 align-self-center">
+                <img src="images/book-reviews.jpg" alt="Book Image" class="img-fluid">
+            </div>
+            <div class="col-md-6 align-self-center">
+                <h2 class="mb-4">Read User Reviews and Ratings</h2>
+                <p class="mb-4">Get insights from user reviews and ratings to make informed reading choices.</p>
+            </div>
+        </div>
+
+        <div class="row ft4">
+            <div class="col-md-6 align-self-center">
+                <h2 class="mb-4">Create and Share Your Reading List</h2>
+                <p class="mb-4">Build a personalized reading list and share it with others or keep it private.</p>
+            </div>
+            <div class="col-md-6 align-self-center">
+                <img src="images/reading-list.jpg" alt="Book Image" class="img-fluid">
+            </div>
+        </div>
     </section>
 
-    <section class="features">
-        <h2>Key Features</h2>
+    <section id="about" class="about container my-5">
+        <h2 class="text-center mb-4">About This Project</h2>
+        <p>This project was born from a passion for books and the desire to create a platform that simplifies the process of discovering, exploring, and sharing great reads. As an avid reader, I often found myself searching for books by my favorite authors, reading reviews to make informed choices, and maintaining a personal reading list. This project was inspired by my journey as a book enthusiast and the challenges I encountered along the way.</p>
+        <p>It all began as a personal project, and I dedicated my free time to its development. Over the course of several months, I crafted the concept, conducted research, and brought this platform to life. The timeline was a labor of love, driven by the belief that every reader deserves a user-friendly tool to enhance their reading experience.</p>
+        <p>Feel free to connect with me on social media:</p>
         <ul>
-            <li>Search for books by title, author, or topic.</li>
-            <li>View book details, including descriptions and covers.</li>
-            <li>Read user reviews and ratings.</li>
-            <li>Create and share your reading list.</li>
+        <a href="https://www.linkedin.com/in/ige-victor-dynamix/" class="btn btn-primary">LinkedIn</a>
+        <a href="https://github.com/codedvictor" class="btn btn-primary">GitHub</a>
+        <a href="https://twitter.com/dynamixvictor" class="btn btn-primary">Twitter</a>
         </ul>
+        <p>If you're interested in contributing or exploring the code behind this project, you can find it on GitHub:</p>
+        <a href="https://github.com/codedvictor/bookhub" class="btn btn-primary">GitHub Repository</a>
     </section>
-
-    <footer>
-        <p>&copy; 2023 Google Book Listing Platform</p>
+    
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 BookHub Listing Platform</p>
     </footer>
 </body>
 </html>
