@@ -1,4 +1,4 @@
-# contributor: Ige Victor Kolade
+# Project Owner: Ige Victor Kolade
 
 ```
 # BookHub Listing Platform
